@@ -9,3 +9,5 @@ os.environ['OPENAI_API_KEY'] = apikey
 # App framework
 st.title('🦜🔗 Connors ai')
 prompt = st.text_input('Enter prompt here')
+
+#testing an update 
