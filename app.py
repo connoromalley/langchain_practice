@@ -10,4 +10,4 @@ os.environ['OPENAI_API_KEY'] = apikey
 st.title('🦜🔗 Connors ai')
 prompt = st.text_input('Enter prompt here')
 
-#testing an update 
+#testing an updatetyr 
