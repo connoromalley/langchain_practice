@@ -11,3 +11,4 @@ st.title('🦜🔗 Connors ai')
 prompt = st.text_input('Enter prompt here')
 
 #testing an updatetyr 
+x = 1
