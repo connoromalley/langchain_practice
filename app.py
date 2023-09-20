@@ -7,8 +7,13 @@ from langchain.llms import OpenAI
 os.environ['OPENAI_API_KEY'] = apikey
 
 # App framework
-st.title('🦜🔗 Connors ai')
+st.title('🦜🔗 Connor\'s AI')
 prompt = st.text_input('Enter prompt here')
 
-#testing an updatetyr 
-x = 1
+# LLMs
+llm = OpenAI(temperature=0.9)
+
+# Show stuff to the screen if there's a prompt
+if prompt:
+    response = llm(prompt)
+    st.write(response)
