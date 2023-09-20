@@ -1,3 +1,1 @@
-apikey = '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'
-
-x = 2
+apikey = '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'
