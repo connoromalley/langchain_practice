@@ -28,8 +28,7 @@ script_template = PromptTemplate(
 llm = OpenAI(temperature=0.9)
 title_chain = LLMChain(llm=llm, prompt=title_template, verbose = True, output_key = 'title')
 script_chain = LLMChain(llm=llm, prompt=script_template, verbose = True, output_key='script')
-sequential_chain = SequentialChain(chains=[title_chain, script_chain], input_variables=['topic'], 
-                                   output_variables=['title', 'script'], verbose = True)
+sequential_chain = SequentialChain(chains=[title_chain, script_chain], input_variables=['topic'], output_variables=['title', 'script'], verbose = True)
 
 # Show stuff to the screen if there's a prompt
 if prompt:
